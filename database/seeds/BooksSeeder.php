@@ -11,8 +11,8 @@ class BooksSeeder extends Seeder
      */
     public function run()
     {
-        if (DB::table('users')->get()->count() == 0) {
-            DB::table('users')->insert([
+        if (DB::table('books')->get()->count() == 0) {
+            DB::table('books')->insert([
                 [
                     'name' => '1984',
                     'genre' => 'Утопия',
